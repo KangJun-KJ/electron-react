@@ -49,7 +49,7 @@ export abstract class Window {
           }),
         );
       } else {
-        this.window.loadURL(`http://localhost:8000/${this.name}.html`);
+        this.window.loadURL(`http://localhost:8080/${this.name}.html`);
       }
     });
   }

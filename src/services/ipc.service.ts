@@ -1,11 +1,16 @@
-import { Service } from '../types'
-import { logger, setIpcReplier } from '../utils';
-import { app, ipcMain } from 'electron'；
+import { app, ipcMain, shell } from 'electron';
+import { Service } from '../types';
+import { setIpcReplier } from '../utils';
 
 export class IpcService extends Service {
     run() {
-        this.setIpcRequest();
+        ipcMain.on("open-electron-website", this.goElectronWebsite.bind(this));
         ipcMain.on('app-close', this.onAppClose.bind(this));
+        this.setIpcRequest();
+    }
+
+    private async goElectronWebsite() {
+        shell.openExternal('https://www.electronjs.org/');
     }
 
     private async onAppClose() {

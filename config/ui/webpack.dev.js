@@ -8,7 +8,7 @@ module.exports = merge.smart(base, {
   devServer: {
     contentBase: path.resolve(__dirname, '../dist/ui'),
     hot: true,
-    port: 8000,
+    port: 8080,
   },
   plugins: [
     new webpack.DefinePlugin({
