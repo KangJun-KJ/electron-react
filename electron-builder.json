@@ -1,0 +1,29 @@
+{
+  "productName": "AutoWorkRunner",
+  "electronDownload": {
+    "mirror": "https://npm.taobao.org/mirrors/electron/"
+  },
+  "files": ["dist/"],
+  "extraResources": [
+    {
+      "from": "static",
+      "to": "static",
+      "filter": ["!awrunner"]
+    }
+  ],
+  "directories": {
+    "output": "release"
+  },
+  "appId": "com.autoworkrpa.runner",
+  "asar": true,
+  "win": {
+    "target": "nsis",
+    "icon": "electron.jpg",
+    "requestedExecutionLevel": "highestAvailable"
+  },
+  "nsis": {
+    "oneClick": false,
+    "allowToChangeInstallationDirectory": true,
+    "perMachine": true
+  }
+}

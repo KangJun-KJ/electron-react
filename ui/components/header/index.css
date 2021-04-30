@@ -1,0 +1,108 @@
+.header {
+  position: relative;
+  display: flex;
+  line-height: 44px;
+  height: 44px;
+  -webkit-app-region: drag;
+  background: linear-gradient(90deg, rgba(2, 2, 71, 1) 0%, rgba(0, 2, 67, 1) 52%, rgba(1, 1, 34, 1) 100%);
+  border-bottom: 1px solid rgba(2, 2, 71, 0.2);
+}
+
+.app-title {
+  position: relative;
+  padding-left: 10px;
+  display: inline-block;
+  color: #00cbeb;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.container {
+  flex-grow: 1;
+}
+
+
+
+
+.right {
+  height: 100%;
+  overflow: hidden;
+  font-size: 14px;
+  color: #767c93;
+  display: flex;
+  -webkit-app-region: no-drag;
+}
+
+.action {
+  vertical-align: middle;
+  color: #c1c7e2;
+  margin-right: 20px;
+}
+
+.action::after {
+  content: '';
+  width: 1px;
+  height: 10px;
+  background-color: #c1c7e2;
+  position: absolute;
+  top: 18px;
+}
+
+.btns {
+  vertical-align: middle;
+}
+
+.btns .icon {
+  padding: 0 12px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.btns .icon:hover {
+  background-color: #3597ff;
+}
+
+.btns .icon::after {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.btns .min::after {
+  background-image: url('../../assets/min.png');
+  background-size: cover;
+  width: 8px;
+  height: 1px;
+}
+
+.btns .max::after {
+  background-image: url('../../assets/最大化.png');
+  width: 8px;
+  height: 8px;
+  background-size: cover;
+}
+
+.btns .close:hover {
+  background-color: #d61425;
+}
+
+.btns .close::after {
+  background-image: url('../../assets/close.png');
+  width: 8px;
+  height: 8px;
+  background-size: cover;
+}
+
+.more {
+  height: 20px;
+  margin-top: 13px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.dropMenu .ant-dropdown-menu-item:hover {
+  background-color: #d9ebff !important;
+}
+.dropMenu .ant-dropdown-menu-item {
+  color: #243262;
+}
