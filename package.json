@@ -1,6 +1,6 @@
 {
-  "name": "rpa-runner",
-  "version": "4.2.2",
+  "name": "electron-react",
+  "version": "1.0.0",
   "main": "dist/main/main.js",
   "description": "AutoWork 让工作变简单",
   "scripts": {
